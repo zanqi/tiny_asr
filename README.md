@@ -8,7 +8,7 @@ This repository contains research aimed at improving the performance of small Au
 
 Here is the data flow of the profiling and evaluation pipeline:
 
-![Data Flow Diagram](images/data_flow.png)
+<img src="images/data_flow.png" alt="Data Flow Diagram" width="400"/>  
 
 The pipeline streams audio samples, passes them through targeted ASR models, normalizes the text outputs (handling punctuation and casing), and calculates the Word Error Rate (WER) against the ground truth reference text.
 
@@ -20,7 +20,7 @@ The evaluation targets two primary model families:
 
 1. **NVIDIA NeMo Conformer**: Comparing `stt_en_conformer_ctc_small` (~13M parameters) against its larger counterpart.
 
-![Conformer Architecture](images/conformer.png)
+<img src="images/conformer.png" alt="Conformer Architecture" width="400"/>
 
 2. **OpenAI Whisper**: Comparing `whisper-tiny` (39M parameters) against `whisper-large-v3`.
 
@@ -34,8 +34,8 @@ The project relies on `jiwer` to record evaluation statistics. The metrics track
 * Model Parameter Count
 * Inference Time / Sample
 
-![Eval on LibriSpeech Clean](images/clean.png)
-![Eval on LibriSpeech Other](images/other.png)
+<img src="images/clean.png" alt="WER Comparison" width="600"/>  
+<img src="images/other.png" alt="WER Comparison" width="600"/>  
 
 
 ## Experience
